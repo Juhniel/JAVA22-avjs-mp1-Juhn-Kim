@@ -135,6 +135,19 @@ form button:hover {
     background-color: #99ea63; 
 }
 
+#score-list {
+    position: fixed;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#score-list h1 {
+    color: green;
+    font-size: 40px;
+}
+
 @keyframes spin-in {
     from {
         transform: rotate(360deg);
