@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./modules/index.js" type="module"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>ROCK! PAPER! SCISSOR!</h1>
+    <form>
+        <label for="name">Enter name</label>
+        <input type="text" name="name" id="nameInput" onfocus="this.value=''">
+        <button id="nameButton">Enter</button>
+        <p id="nameParagraph"></p>
+    </form>
+
+    <div class="popUpWindow" id="popUpWindow">
+        <img src="./images/youwin1.jpg" alt="" id="imgWin">
+        <img src="./images/youlose1.jpg" alt=""  id="imgLose">
+        <button id="playAgainButton">Play Again!</button>
+    </div>
+    
+    <div class="rpsContainer" id ="rpsContainer">
+    <img src="./images/rock1.jpg" alt="" class="rpsImg" id="rockOption">
+    <img src="./images/paper1.jpg" alt="" class="rpsImg" id="paperOption">
+    <img src="./images/scissor1.jpg" alt="" class="rpsImg" id="scissorOption">
+    </div>
+    
+    <div class="paragraphContainer">
+        <p id="playerScore">Player Score:</p>
+        <p id="winnerParagraph">Winner is: </p>
+        <p id="computerScore">Computer Score:</p>
+        <p id="playerChoice">Player Choice: </p>
+        <p id="computerChoiceParagraph">Computer Choice: </p>
+        
+    </div>
+</body>
+</html>
