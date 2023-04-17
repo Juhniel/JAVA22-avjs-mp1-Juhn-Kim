@@ -35,8 +35,6 @@ export async function getHighscore() {
       const response = await fetch(url);
       const data = await response.json();
       const highScore = Object.entries(data);
-
-      console.log(playerScore, playerName);
     
       // Find the lowest score and its key
       let lowestScore = Infinity;
@@ -59,7 +57,6 @@ export async function getHighscore() {
       }
     }
   
-//   getHighscore();
   
   async function patchFunction(playerName, playerScore, key) {
     const newURL = `https://highscore-9b9df-default-rtdb.europe-west1.firebasedatabase.app/highscores/${key}.json`;
@@ -78,5 +75,5 @@ export async function getHighscore() {
     };
   
     const newResponse = await fetch(newURL, options);
-    const newData = await newResponse.json();
+    await newResponse.json();
   }

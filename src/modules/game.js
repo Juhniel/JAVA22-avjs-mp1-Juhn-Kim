@@ -1,6 +1,6 @@
 import { getHighscore, addHighscore } from "./highscore.js";
 
-getHighscore();
+// getHighscore();
 
 const nameParagraph = document.querySelector("#nameParagraph");
 const rpsContainer = document.querySelector("#rpsContainer");
@@ -15,8 +15,7 @@ const computerScoreParagraph = document.querySelector("#computerScore");
 const computerChoiceParagraph = document.querySelector("#computerChoiceParagraph")
 const playAgainButton = document.querySelector("#playAgainButton");
 const playAgainPopUp = document.querySelector("#popUpWindow");
-const imgLose = document.querySelector("#imgLose");
-const imgWin = document.querySelector("#imgWin");
+
 
 
 let playerChoice;
@@ -37,10 +36,7 @@ for(let i = 0; i < rpsOptions.length; i++) {
         playerChoiceParagraph.innerText = `Player chose: ${rpsOptionsString[playerChoice]}`;
         if(computerScore === 1) {
             playAgainPopUp.style.cssText = ` display: inline;`; 
-            imgLose.style.cssText = "display: inline;";
-            imgWin.style.cssText = "display: none;";
             rpsContainer.style.cssText = "display: none;"
-
         } 
     })
 };
