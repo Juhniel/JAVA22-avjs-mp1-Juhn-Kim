@@ -1,7 +1,5 @@
 import { getHighscore, addHighscore } from "./highscore.js";
 
-// getHighscore();
-
 const nameParagraph = document.querySelector("#nameParagraph");
 const rpsContainer = document.querySelector("#rpsContainer");
 const rockOption  = document.querySelector("#rockOption");

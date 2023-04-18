@@ -30,7 +30,6 @@ export async function getHighscore() {
 }
   
   export async function addHighscore(playerScore, playerName) {
-    //   event.preventDefault();
       const url = "https://highscore-9b9df-default-rtdb.europe-west1.firebasedatabase.app/highscores.json";
       const response = await fetch(url);
       const data = await response.json();
@@ -69,7 +68,7 @@ export async function getHighscore() {
     const options = {
       method: "PATCH",
       body: JSON.stringify(newHighscore),
-      Headers: {
+      headers: {
         "Content-type": "application/json",
       },
     };
